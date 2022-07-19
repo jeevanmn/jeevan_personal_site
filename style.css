@@ -1,0 +1,385 @@
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin: 0;
+
+    /* This is what makes only the right side ready scroll*/
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left_parent {
+    height: 100vh;
+    width: 50vw;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    position: relative;
+}
+
+.right_parent {
+    height: 100vh;
+    width: 50vw;
+    background-color: #181818;
+
+    /* This is what actually makes the right side scroll */
+
+    overflow: scroll;
+}
+
+.left_elements {
+    width: 100%;
+    height: 86.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8.66%;
+
+    
+}
+
+.hero_title {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 150%;
+    color: #b7bdcb;
+
+    
+    margin-right: 28.1255%;
+    padding: 0%;
+    margin-top: 0%; 
+    margin-bottom: 4rem;
+}
+
+.my_info {
+    *margin-left: 8.75%;
+}
+
+.my_info_top {
+    display: flex;
+    flex-direction: row;
+}
+
+.my_avatar {
+    object-fit: cover;
+    height: 90px;
+    width: 90px;
+    background: #D9D9D9;
+    border-radius: 400px;
+    margin-right: 1.75rem;
+}
+
+.my_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+}
+
+.my_name_title {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+    color: #b7bdcb;
+}
+
+.my_name_subtitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #b7bdcb;
+}
+
+.my_info_bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.my_info_links {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    color: #36C155;
+}
+
+/* right side of the page starts here*/
+
+#project_0 {
+    display: flex;
+    flex-direction: column;
+    background-color: #36C155;
+    height: fit-content;
+    padding-left: 8.75%;
+    padding-top: 6.6666vh;
+    padding-bottom: 6.6666vh;
+}
+
+#project_0_title {
+    font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+color: #181818;
+
+}
+
+.project_0_list_holder {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.project_0_list_element {
+    padding-left: 0;
+    padding-right: 4rem;
+    list-style-type: none;
+    padding-bottom: 1rem;
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #181818;
+}
+
+.project_parent {
+    width: 100%;
+    background-color:lightgrey;
+    display: grid;
+    height: 50vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.project_image {
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8.75%; 
+    padding-right: 20%;
+  
+}
+
+.project_title {
+    font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+margin-top: 6.6666vh;
+color: #181818;
+}
+
+.project_subtitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 1.6666vh;
+    color: #181818;
+}
+
+.project_button {
+    height: 3rem;
+    width:fit-content;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #D9D9D9;
+    border-radius: 400px;
+    border: none;
+    box-shadow: none;
+    background: #181818;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 6.6666vh;
+}
+
+#project_3_title {
+    color: #D9D9D9;
+}
+
+#project_3_subtitle {
+    color: #D9D9D9;
+}
+
+.mobile_footer {
+    display: none;
+    
+}
+
+
+/* Media query starts here*/
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    
+        /* This is what makes only the right side ready scroll*/
+    
+        height: auto;
+        overflow: scroll;
+        background-color: #181818;
+    }
+
+    .left_parent {
+        height: 85vh;
+        width: 100vw;
+        background-color: #181818;
+        display: flex;
+        align-items: center;
+        padding: 0%;
+        position: relative;
+    }
+    
+    .right_parent {
+        height: auto;
+        width: 100vw;
+        background-color: #181818;
+    
+        /* This is what actually makes the right side scroll */
+    
+    
+    }
+
+    .project_parent {
+        width: 100%;
+        background-color:lightgrey;
+        display: grid;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        align-items: center;
+    }
+
+    .my_info_top {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+
+    .project_title {
+        font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-top: 4.6666vh;
+    color: #181818;
+    }
+    
+    .project_subtitle {
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 1.2222vh;
+        color: #181818;
+    }
+
+    .project_button {
+        height: 3rem;
+        width:fit-content;
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #D9D9D9;
+        border-radius: 400px;
+        border: none;
+        box-shadow: none;
+        background: #181818;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 4.6666vh;
+        
+    }
+
+    .button_wrapper {
+        cursor: pointer;
+    }
+
+    .project {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 8.75%; 
+        padding-right: 10%;
+      
+    }
+
+    .mobile_footer {
+        height: 2rem;
+        color: #758099;
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+}
