@@ -1,2 +1,3 @@
 # jeevan_personal_site
-My website
+
+This template is MIT licenced, but the website's content is not.
