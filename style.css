@@ -273,7 +273,7 @@ color: #181818;
     }
 
     .left_parent {
-        height: 85vh;
+        min-height: fit-content;
         width: 100vw;
         background-color: #181818;
         display: flex;
@@ -281,14 +281,52 @@ color: #181818;
         padding: 0%;
         position: relative;
     }
+
+    .my_avatar {
+        object-fit: cover;
+        height: 72px;
+        width: 72px;
+        background: #D9D9D9;
+        border-radius: 400px;
+        margin-right: 1.5rem;
+    }
+
+    .hero_title {
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 150%;
+        color: #b7bdcb;
+    
+        
+        margin-right: 15%;
+        padding: 0%;
+        margin-top: 0%; 
+        margin-bottom: 4rem;
+    }
+
+    .my_name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 72px;
+    }
+
+    .my_name_title {
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 0.5rem;
+        color: #b7bdcb;
+    }
     
     .right_parent {
         height: auto;
         width: 100vw;
         background-color: #181818;
-    
-        /* This is what actually makes the right side scroll */
-    
     
     }
 
@@ -312,9 +350,9 @@ color: #181818;
         font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 150%;
-    margin-top: 4.6666vh;
+    margin-top: 3.6666vh;
     color: #181818;
     }
     
@@ -322,7 +360,7 @@ color: #181818;
         font-family: 'Be Vietnam Pro';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 19px;
         margin-top: 1.2222vh;
         color: #181818;
@@ -334,7 +372,7 @@ color: #181818;
         font-family: 'Be Vietnam Pro';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 18px;
         color: #D9D9D9;
         border-radius: 400px;
@@ -343,7 +381,7 @@ color: #181818;
         background: #181818;
         padding-left: 2rem;
         padding-right: 2rem;
-        margin-bottom: 4.6666vh;
+        margin-bottom: 3.6666vh;
         
     }
 
